@@ -120,19 +120,10 @@ export default function HomePage() {
                     type="number"
                     value={amount}
                     onChange={handleAmountChange}
-                    placeholder="Amount"
+                    placeholder="Amount to be donated"
                     className="amount-input"
                   />
-                  <input
-                    type='text'
-                    placeholder='Name'
-                    className="amount-input"
-                  />
-                  <input
-                    type='tel'
-                    placeholder='Mobile Number'
-                    className="amount-input"
-                  />
+                 
                   <button onClick={handleShowQRCode} className="btn">
                     Show QR Code
                   </button>
