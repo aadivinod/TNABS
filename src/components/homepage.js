@@ -6,7 +6,7 @@ import about from './about.jpg'
 import pic1 from './pic.jpg'
 import pic2 from './pic1.jpg'
 import pic3 from './pic2.jpg'
-const UPI_ID = 'vinod.aadi2011@okayaxis';
+const UPI_ID = '8668926054969@cnrb';
 
 export default function HomePage() {
   const [amount, setAmount] = useState('');
