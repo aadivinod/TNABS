@@ -334,3 +334,7 @@ h2::after {
     align-items: center;
   }
 }
+.footer .container p
+{
+  color: var(--accent-color);
+}
