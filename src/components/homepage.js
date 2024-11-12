@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="container">
             <h2>Support Our Samaj</h2>
             <p className="donate-description">
-              Your generous contributions help us maintain our temple, organize events, and serve our community. 
+              Your generous contributions help us maintain our legacy, organize events, and serve our community. 
               Every donation, big or small, makes a difference.
             </p>
             <button className="btn donate-btn" onClick={() => setShowQRCode(true)}>
