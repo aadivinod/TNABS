@@ -3,6 +3,9 @@ import { QRCodeSVG } from 'qrcode.react';
 import './homepage.css';
 import logo from './logo1.png';
 import about from './about.jpg'
+import pic1 from './pic.jpg'
+import pic2 from './pic1.jpg'
+import pic3 from './pic2.jpg'
 const UPI_ID = '8668926054969@cnrb';
 
 export default function HomePage() {
@@ -42,7 +45,7 @@ export default function HomePage() {
             <ul>
               <li><a href='#donate'>Donate</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#events">Events</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -79,22 +82,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="events" className="section events-section">
+        <section id="gallery" className="section events-section">
           <div className="container">
-            <h2>Upcoming Events</h2>
+            <h2>Photo Gallery</h2>
             <div className="events-grid">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="event-card">
                   <img 
-                    src="/placeholder.svg?height=200&width=400" 
+                    src={[pic1,pic2,pic3][i-1]}
                     alt={`Event ${i}`} 
+                    height="400px"
+                    width="400px"
                     className="event-image"
                   />
-                  <div className="event-details">
-                    <h3>Event Title {i}</h3>
-                    <p>Brief description of the event goes here. Date, time, and other relevant details.</p>
-                    <button className="btn">Learn More</button>
-                  </div>
                 </div>
               ))}
             </div>
